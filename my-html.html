@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel="stylesheet" href="my-css.css"/>
+    <title>Boardolio</title>
+</head>
+
+<body>
+
+    <div id="top-div" class="w3-container w3-theme-d4">
+    </div>
+
+    <header id="header" class="w3-container w3-theme-l5">
+        <h1 class="w3-text-theme">BOARDOLIO</h1>
+        <p class="w3-text-theme-l5 ">a dashboard for your stock portfolio</p>
+    </header>
+
+    <!-- Hero Image -->
+    <div class="hero-image w3-image">
+        <!-- w3-grayscale -->
+        <div class="hero-text">
+            
+            <form id="submit" class="form-inline md-form mr-auto mb-4 w3-cell-row">
+                <input id="input" class="w3-display-bottommiddle form-control mr-sm-2" type="text" placeholder="Search for Stock" aria-label="Search">
+                <button class="w3-display-bottommiddle w3-button w3-theme-d1" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <section>
+        <div id="search-results">
+
+        </div>
+
+
+        <div id="portfolio">
+
+        </div>
+    </section>
+
+
+    <canvas id="myChart"></canvas>
+    </div>
+
+    <div id="bottom-div" class="w3-container w3-theme-d4">
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="my-js.js"></script>
+</body>
+
+</html>

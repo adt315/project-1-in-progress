@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+
+a {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 100px;
+  color: lightgrey;
+  padding: 3px;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
 /* Style the form - display items horizontally */
 .form-inline {
   display: flex;
@@ -15,7 +28,7 @@
 #input {
     font-size: 20px;
   vertical-align: middle;
-  background-color: #fff;
+  background-color: white;
   border: 1px solid #ddd;
 }
 

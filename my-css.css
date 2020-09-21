@@ -102,3 +102,25 @@ h4 {
   color: white;
   }
 
+#zoom-header {
+  text-align: center;
+  color:#3D4F5C;
+}
+
+#close-date, #price {
+  color: #3D4F5C;
+  font-size: x-large;
+}
+
+#zoom-footer {
+  height: 1em;
+}
+
+#exit-zoom {
+  background-color: transparent;
+}
+
+#w3review {
+  color: #3D4F5C;
+  width: 100%;
+}

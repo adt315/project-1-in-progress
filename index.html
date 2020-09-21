@@ -21,8 +21,8 @@
 
     <!-- Header -->
     <section>
-        <header id="header" class="w3-container w3-theme-l5">
-            <h1 class="w3-text-theme">BOARDOLIO</h1>
+        <header id="header" class="w3-container">
+            <img class="logo" src="https://i.postimg.cc/nXZRD3XB/boardolio-logo.jpg" alt="boardolio-logo">
             <h4 id="head-text" class="w3-text-theme">a convenient dashboard to track your stock portfolio</h4>
         </header>
     </section>
@@ -30,12 +30,13 @@
     <!-- Hero & Search Area -->
     <section>
         <div class="hero-image">
-            <h2 class="hero-text w3-text-theme-l5">THE EASY WAY TO FOLLOW EQUITIES</h2>
+            <h2 id="equities-text" class="hero-text w3-text-theme-l5">THE EASY WAY TO FOLLOW EQUITIES</h2>
             <form id="submit" class="form-inline w3-container w3-cell-row">
                 <div id="search-area" class="w3-display-bottommiddle">
                     <input id="input" type="text" placeholder="Search for Stock" aria-label="Search">
                     <button id="sub-but" class="w3-button w3-theme-d3 w3-round" type="submit"><i
                             class="fas fa-search"></i></button>
+                            <!-- <a class="nav-item" href="#equities-text">My Portfolio</a> -->
                 </div>
             </form>
         </div>
@@ -78,8 +79,8 @@
     <!-- Zoom In Modal -->
     <div id="modal" class="w3-modal w3-card">
         <div class="w3-modal-content w3-animate-zoom">
-            <span onclick="document.getElementById('modal').style.display='none'" id="exit-zoom"
-                class="w3-button w3-display-topright">&times;</span>
+            
+            
             <header class="w3-container w3-theme-l3">
                 <h1 id="zoom-header">STOCK XX</h1>
             </header>
@@ -100,8 +101,8 @@
 </html>
 </div>
 
-<footer id="zoom-footer" class="w3-container w3-theme-l3">
-
+<footer id="zoom-footer" class="w3-container">
+    
 </footer>
 
 </div>
@@ -116,8 +117,9 @@
 
 
 <!-- Footer -->
-<div id="bottom-div" class="w3-container w3-theme-d4">
-</div>
+<footer class="w3-theme-d4">
+    <p class="copyright">© 2020 The Halo of Thought</p>
+</footer>
 
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>

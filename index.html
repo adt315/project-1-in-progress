@@ -3,57 +3,80 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
-    <link rel="stylesheet" href="my-css.css"/>
+    <link rel="stylesheet" href="my-css.css" />
     <title>Boardolio</title>
 </head>
 
 <body>
-
+    
+    <!-- Nav? -->
     <div id="top-div" class="w3-container w3-theme-d4">
     </div>
 
+    <!-- Header -->
+    <section>
     <header id="header" class="w3-container w3-theme-l5">
         <h1 class="w3-text-theme">BOARDOLIO</h1>
-        <p class="w3-text-theme-l5 ">a dashboard for your stock portfolio</p>
+        <h4 id="head-text" class="w3-text-theme">a convenient dashboard to track your stock portfolio</h4>
     </header>
+    </section>  
 
-    <!-- Hero Image -->
-    <div class="hero-image w3-image">
-        <!-- w3-grayscale -->
-        <div class="hero-text">
-            
-            <form id="submit" class="form-inline md-form mr-auto mb-4 w3-cell-row">
-                <input id="input" class="w3-display-bottommiddle form-control mr-sm-2" type="text" placeholder="Search for Stock" aria-label="Search">
-                <button class="w3-display-bottommiddle w3-button w3-theme-d1" type="submit"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
-    </div>
-
-
-
+    <!-- Hero & Search Area -->
     <section>
-        <div id="search-results">
+    <div class="hero-image">
+        <h2 class="hero-text w3-text-theme-l5">THE EASY WAY TO FOLLOW EQUITIES</h2>
+        <form id="submit" class="form-inline w3-container w3-cell-row">
+            <div id="search-area" class="w3-display-bottommiddle">
+                <input id="input" type="text" placeholder="Search for Stock" aria-label="Search">
+                <button id="sub-but" class="w3-button w3-theme-d3" type="submit"><i
+                        class="fas fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+    </section>
 
-        </div>
-
-
-        <div id="portfolio">
-
+    <!-- Search Results Section -->
+    <section>
+        <div id="search-results" class="w3-padding w3-xlarge w3-blue-grey">
+            <button id="submit" class="w3-button w3-theme-d3" type="submit"><i
+                class="fas fa-search"></i></button>
         </div>
     </section>
 
 
-    <canvas id="myChart"></canvas>
-    </div>
+    <!-- Historical Chart Section -->
+    <section>
+        <canvas id="myChart">
 
+        </canvas>
+    </section>
+
+
+    <!-- My Portfolio Section -->
+    <section>
+        <div id="portfolio" class="w3-padding w3-xlarge w3-blue-grey">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <div class="w3-panel w3-padding w3-card w3-grey">
+                            <p>STOCK XX</p>
+                            <p>stock information here</p>
+                            <i class="fa fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <div id="bottom-div" class="w3-container w3-theme-d4">
     </div>
-
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
